@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="canvas">
+        <h2 id="title">SPLI <br/> TTER</h2>
+        <section id="bill_bord_container">
+            <div id="left_section">
+                <h4>Bill</h4>
+                <input id="bill_input" type="number" value="0" min="0"/>
+                <h4>Select Tip %</h4>
+                <div id="button_container">
+                    <button class="tip_buttons">5%</button>
+                    <button class="tip_buttons">10%</button>
+                    <button class="tip_buttons">15%</button>
+                    <button class="tip_buttons">25%</button>
+                    <button class="tip_buttons">50%</button>
+                    <button >Custom</button>
+                </div>
+                <h4>Number of People</h4>
+                <input id="num_of_people" type="number" value="0" min="0" />
+                
+            </div>
+            <div id="right_section">
+                <div id="tip_amount_container">
+                    <div id="tip_amount">Tip Amount <br/> <span>/person</span></div>
+                    <div id="tip_value">$0.00</div>
+                </div>
+                <div id="total_amount_container">
+                    <div id="total_amount">Total <br/><span>/ person</span></div>
+                    <div id="total_value">$0.00</div>
+                </div>
+
+                <button id="reset_btn" disabled >Reset</button>
+
+            </div>
+        </section>
+    </div>
+    <script src="./index.js" async ></script>
+</body>
+</html>
